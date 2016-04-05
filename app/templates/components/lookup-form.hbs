@@ -1,0 +1,8 @@
+<h2>Lookup Form</h2>
+ <form class="findMyLegislatorForm">
+   <div class="formInput">
+     <label for="zipcode">Zip Code</label>
+     {{input type="number" min=0 value="zipcode" id="zipcode"}}
+     <button type="button" name="button" {{action "lookUpZip"}}>Search</button>
+   </div>
+ </form>
