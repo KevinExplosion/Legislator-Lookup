@@ -1,5 +1,11 @@
+<div class="container">
+{{#each model as |legislator|}}
+<h3>{{legislator.state_name}}</h3>
 <ul>
-  {{#each model as |legislator|}}
-    <li>{{legislator.first_name}} {{legislator.last_name}} <br> Contact: <a href= {{legislator.contact_form}}>{{legislator.contact_form}}</a></li>
-  {{/each}}
+    <li>{{legislator.first_name}} {{legislator.last_name}}
+      <br> Contact: <a href= {{legislator.contact_form}}>{{legislator.contact_form}}</a>
+      <br> Follow on <a href="http://www.twitter.com">Twitter</a> @: <a href="http://www.twitter.com/"{{legislator.twitter_id}}>{{legislator.twitter_id}}</a>
+  </li>
 </ul>
+{{/each}}
+</div>
