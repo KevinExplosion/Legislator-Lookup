@@ -1,0 +1,14 @@
+<div class="container">
+<h3>House Committees:</h3>
+{{#each model as |house|}}
+<ul class="house">
+    {{committee.name}}
+</ul>
+{{/each}}
+<h3>Senate Committees:</h3>
+{{#each model as |senate|}}
+<ul class="senate">
+    {{committee.name}}
+</ul>
+{{/each}}
+</div>
